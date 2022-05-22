@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+     <script src="script.js" defer> </script>
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="title"> Covid Information Hub </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="health.html">Health Care</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+
+     <div class="form-container">
+         <div class="title">
+           Sign up to join our website.
+         </div>
+
+             <form   action="#" method="post">
+                 <div class="userdetails">
+                   <div class="input">
+                   <span class="deatils"> First Name </span>
+                   <input id="in1" type="text" name="" value="" required>
+                 </div>
+                 <div class="input">
+                   <span class="deatils"> Last Name </span>
+                   <input id="in2" type="text" name="" value="" required>
+                 </div>
+                 <div class="input">
+                   <span class="deatils"> Country </span>
+                   <input id="in3" type="text" name="" value="" required>
+                 </div>
+                 <div class="input">
+                   <span class="deatils"> Email </span>
+                   <input id="in4" type="email" name="" value="" placeholder="example@gmail.com" required>
+                 </div>
+                   <div class="input">
+                   <span class="deatils"> Password </span>
+                   <input id="in5" type="password" name="" value="" required>
+                </div>
+
+               </div>
+
+
+               <button id="btn" type="submit" name="button">Register</button>
+
+
+              </form>
+        </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+
+         $(document).ready(function(){
+           $("#btn").mouseover(function(){
+             $(this).css("background", "limegreen")
+             $(this).css("transform", "scale(1.5)")
+               });
+                $("#btn").mouseout(function(){
+                 $(this).css("background", "none")
+                  $(this).css("transform", "scale(1)")
+                     });
+                       $("#in1, #in2, #in3, #in4, #in5").mouseover(function(){
+                         $(this).css("background", "grey")
+
+                             $(this).css("opacity", "0.5")
+                          });
+                        $("#in1, #in2, #in3, #in4, #in5").mouseout(function(){
+                         $(this).css("background", "none")
+
+                           });
+     });
+     </script>
+
+
+  </body>
+</html>
